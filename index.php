@@ -49,74 +49,10 @@
 
 <body class="index-page">
 
-  <header id="header" class="header fixed-top">
+<?php 
+include('header.php');
+?>
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a
-              href="mailto:contact@example.com">jpopticaldvd@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9910806428</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-cente">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Jp Optical Industries</h1>
-          <span>.</span>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="" class="active">Home<br></a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <!-- <li><a href="">Portfolio</a></li> -->
-            <li class="dropdown"><a href="#"><span>Products</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Mobile cleaning gel</a></li>
-                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                      class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li> -->
-                <li><a href="#">All Gadject Cleaning Gel</a></li>
-                <li><a href="#">Optical/Lense Cleaning Liquid</a></li>
-                <li><a href="#">Glass Cleaning Liquid</a></li>
-                <li><a href="#">Optical Frame Case</a></li>
-                <li><a href="#">Yoga Paduka Slipper</a></li>
-              </ul>
-            </li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Testimonials</a></li>
-
-            <li><a href="">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-      </div>
-
-    </div>
-
-  </header>
 
   <main class="main">
 
@@ -232,7 +168,7 @@
               <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Supply</li>
               <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Services Provider</li>
             </ul>
-            <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+            <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
               data-aos="fade-up" data-aos-delay="200">Contact Us</a>
           </div>
           <div class="col-12 col-md-6 col-lg-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
@@ -343,10 +279,10 @@
                 <img src="assets/img/products/mobile-cleaning-gel-1.jpg" class="img-fluid" alt="">
                 <h4 class="pt-4" style="letter-spacing: 2px;">Mobile Cleaning Gel</h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="mobile-cleaning-gel.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" >Details</a>
                 </div>
               </div>
             </div>
@@ -358,10 +294,10 @@
                 <img src="assets/img/products/optical-lense-cleaning-gel-1.jpg" class="img-fluid" alt="">
                 <h4 class="pt-4" style="letter-spacing: 2px;">Optical Lense Cleaning Liquid </h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="optical-lens-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" >Details</a>
                 </div>
               </div>
             </div>
@@ -373,10 +309,10 @@
                 <img src="assets/img/products/all-gadject-cleaning-gel-1.jpg" class="img-fluid" alt="">
                 <h4 class="pt-4" style="letter-spacing: 2px;">All Gadject Cleaning Gel </h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="all-gad-c-g.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" >Details</a>
                 </div>
               </div>
             </div>
@@ -388,10 +324,10 @@
                 <img src="assets/img/products/glass-cleaning-liquid-1.jpg" class="img-fluid" alt="">
                 <h4 class="pt-4" style="letter-spacing: 2px;">Glass Cleaning Liquid</h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="glass-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" >Details</a>
                 </div>
               </div>
             </div>
@@ -403,9 +339,9 @@
                 <img src="assets/img/products/optical-frame-case-1.jpg" class="img-fluid" alt="">
                 <h4 class="pt-4" style="letter-spacing: 2px;">Optical Frame Case</h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="optical-frame-case.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                     data-aos="fade-up" data-aos-delay="200">Details</a>
                 </div>
               </div>
@@ -419,10 +355,10 @@
                 <img src="assets/img/products/yoga.jpg" class="img-fluid" alt="" >
                 <h4 class="pt-4" style="letter-spacing: 2px;">Yoga Paduka Slipper</h4>
                 <div class="pt-4">
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Enquiry</a>
-                  <a href="contact.html" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
+                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="yoga-paduka-slipper.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                    data-aos="fade-up" data-aos-delay="200" >Details</a>
                 </div>
               </div>
             </div>
@@ -487,7 +423,7 @@
                     here to assist you with any questions or
                     concerns you may have. have inquiries about our products, or require assistance with returns or
                     exchanges.</p>
-                  <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                     data-aos="fade-up" data-aos-delay="200">Read More</a>
                 </div>
               </div>
@@ -505,7 +441,7 @@
                   <p class="text-center pb-3 text-white lh-lg" data-aos="fade-up" data-aos-delay="200">we believe in
                     delivering products that perfectly match your unique vision. Our Customized Orders service allows
                     you to personalize our offerings to meet your specific needs.</p>
-                  <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                     data-aos="fade-up" data-aos-delay="200">Read More</a>
                 </div>
               </div>
@@ -526,7 +462,7 @@
                     timely delivery is crucial to our customers. That’s why we are committed to ensuring that your
                     orders arrive swiftly and efficiently, right when you need them and helping your for Delivery and
                     Services.</p>
-                  <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                     data-aos="fade-up" data-aos-delay="200">Read More</a>
                 </div>
               </div>
@@ -719,7 +655,7 @@
                   them during the day and toss them at night.</a>
               </h2>
               <div class="text-center">
-                <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                   data-aos="fade-up" data-aos-delay="200">Read More</a>
               </div>
             </article>
@@ -739,7 +675,7 @@
                   enhancement or a dramatic change.</a>
               </h2>
               <div class="text-center">
-                <a href="" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                   data-aos="fade-up" data-aos-delay="200">Read More</a>
               </div>
             </article>
@@ -759,7 +695,7 @@
                   astigmatism or multifocal lenses can provide.</a>
               </h2>
               <div class="text-center">
-                <a href="contact.html" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                   data-aos="fade-up" data-aos-delay="200">Read More</a>
               </div>
 
@@ -821,29 +757,26 @@
                   <p>Mon-Sat: 10AM - 23PM</p>
                 </div>
               </div><!-- End Info Item -->
-
             </div>
-
           </div>
-
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control name" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control email" name="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control phone" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control message" name="message" rows="8" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -851,7 +784,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onclick="contact()">Send Message</button>
                 </div>
 
               </div>
@@ -866,90 +799,7 @@
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4 justify-content-center">
-        <div class="col-12 col-lg-5 col-md-6 col-sm-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Jp Optical Industries</span>
-          </a>
-          <p>At JP Optical Industries, we specialize in providing high-quality optical products designed to enhance
-            vision and improve the quality of life. With a commitment to innovation, precision, and customer
-            satisfaction, we have established ourselves as a leader in the optical industry.</p>
-        </div>
-
-        <div class="col-12 col-lg-2 col-md-6 col-sm-12 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="col-12 col-lg-3 col-md-6 col-sm-12 footer-contact text-md-start">
-          <h4>Contact Us</h4>
-          <p>Factory- C47/2 ,Rampura industrial area,lawerance road, tri nagar
-            Reg add
-          </p>
-          <p>India</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+91 9212567105</span></p>
-          <p><strong>Email:</strong> <span>Jpopticalind.2016@gmail.com</span></p>
-        </div>
-
-        <div class="col-12 col-lg-2 col-md-6 col-sm-12 footer-links ">
-          <h4>Our Services</h4>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-          <div class="pt-4">
-            <img src="./assets/img/logo.webp" alt="" height="60px" width="150px">
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Jp Optical Industries</strong> <span>All Rights
-          Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://web2export.com/">Web2Export</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+  <?php 
+  include('footer.php');
+  ?>
