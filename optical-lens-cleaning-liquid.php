@@ -70,8 +70,8 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>Optical Lens Cleaning Gel</h2>
+    <div class="bg slider">
+        <h2 class="text">Optical Lens Cleaning Gel</h2>
     </div>
 
 

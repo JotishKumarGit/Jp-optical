@@ -70,8 +70,8 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>About Us</h2>
+    <div class="bg slider">
+        <h2 class="text">About Us</h2>
     </div>
 
 
@@ -116,7 +116,7 @@
 
 
 
-    <section class="shadow-lg" style="background-color: rgb(165 183 168);">
+    <section class="shadow-lg" style="background-color: rgb(95 109 97 / 30%);">
         <div class="container">
 
             <div class="row shadow-lg align-items-center py-5 px-4 align-items-center"
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="" data-aos="fade-up" data-aos-delay="200">Our Mission</h2>
+                    <h2 class="mt-5" data-aos="fade-up" data-aos-delay="200">Our Mission</h2>
                     <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">At JP Optical Industries, our mission is to lead the optical industry by delivering innovative, high-quality optical solutions that enhance vision and improve the quality of life for our customers. We are committed to excellence in manufacturing, exceptional customer service, and sustainable practices.</p>
                     <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">By fostering a culture of continuous improvement and technological advancement, we aim to empower individuals and businesses alike with the clarity and precision they need to thrive in a dynamic world.</p>
                     <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
@@ -144,7 +144,7 @@
 
 
 
-    <section class="shadow-lg" style="background-color: rgb(165 183 168);">
+    <section class="shadow-lg" style="background-color: rgb(42 53 44 / 25%);">
         <div class="container">
 
             <div class="row shadow-lg align-items-center py-5 px-4 "

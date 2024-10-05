@@ -70,8 +70,8 @@ include('header.php');
 
 <!--  -->
 
-<div class="bg">
-    <h2>Services</h2>
+<div class="bg slider">
+    <h2 class="text">Services</h2>
 </div>
 
 

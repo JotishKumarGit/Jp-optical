@@ -70,8 +70,8 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>Yoga Paduka Slipper</h2>
+    <div class="bg slider">
+        <h2 class="text">Yoga Paduka Slipper</h2>
     </div>
 
 
@@ -98,7 +98,7 @@
                 <div class="col-12 col-md-6 col-lg-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="image-effect">
                         <div class="img-a ">
-                            <img src="./assets/img/products/optical-frame-case-1.jpg" alt="" class="shadow-lg " height="auto" width="100%"
+                            <img src="./assets/img/products/yoga-2.webp" alt="" class="shadow-lg " height="auto" width="100%"
                                 style="object-fit: cover; border: 1px dashed greenyellow; border-radius: 20px;" data-aos="fade-up"
                                 data-aos-delay="200">
                         </div>

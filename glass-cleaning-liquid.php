@@ -70,8 +70,8 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>Glass Cleaning Liquid</h2>
+    <div class="bg slider">
+        <h2 class="text">Glass Cleaning Liquid</h2>
     </div>
 
 

@@ -43,15 +43,45 @@
       opacity: 1;
       /* Full opacity on hover */
     }
+
+    /* THis is for slider */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      /* white-space: nowrap;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff; */
+      position: relative;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+
+    .text {
+
+      display: inline-block;
+      /* padding: 10px; */
+      /* font-size: 1.2em; */
+      animation: slide 3s linear infinite;
+    }
+
+    @keyframes slide {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
   </style>
 
 </head>
 
 <body class="index-page">
 
-<?php 
-include('header.php');
-?>
+  <?php
+  include('header.php');
+  ?>
 
 
   <main class="main">
@@ -74,15 +104,15 @@ include('header.php');
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/img/products/baner-2.jpg" class="d-block w-100" alt="..." height="500px" width="100%"
+            <img src="./assets/img/products/baner-2.jpeg" class="d-block w-100" alt="..." height="auto" width="100%"
               style="object-fit: cover;">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/products/baner-3.jpg" class="d-block w-100" alt="..." height="500px" width="100%"
+            <img src="./assets/img/products/baner-new-2.jpeg" class="d-block w-100" alt="..." height="auto" width="100%"
               style="object-fit: cover;">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/products/baner-4.avif" class="d-block w-100" alt="..." height="500px" width="100%"
+            <img src="./assets/img/products/baner-new-3.jpeg" class="d-block w-100" alt="..." height="auto" width="100%"
               style="object-fit: cover;">
           </div>
 
@@ -150,8 +180,8 @@ include('header.php');
     <!-- This is about section  -->
     <section class="shadow-lg" style="background-color: rgb(165 183 168);">
       <div class="container">
-        <div class="py-5">
-          <h2 class="text-center">About Us</h2>
+        <div class="py-5 text-center slider">
+          <h2 class="text-center text">About Us</h2>
         </div>
         <div class="row shadow-lg align-items-center py-5 px-4 "
           style="border-radius: 20px; border: 2px dashed ghostwhite;" data-aos="fade-up" data-aos-delay="200">
@@ -194,15 +224,15 @@ include('header.php');
 
           <div class="col-lg-5">
             <div class="image-effect">
-            <div class="img-a">
-              <img src="assets/img/products/baner-7.avif" alt="" class="img-fluid shadow-lg"
-                style="border: 1px dashed grey; border-radius: 20px;">
-            </div>
+              <div class="img-a">
+                <img src="assets/img/products/baner-7.avif" alt="" class="img-fluid shadow-lg"
+                  style="border: 1px dashed grey; border-radius: 20px;">
+              </div>
             </div>
           </div>
           <div class="col-lg-7">
 
-            <div class="row gy-4">
+            <div class="row gy-4 ">
 
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
@@ -263,8 +293,8 @@ include('header.php');
     <section id="team" class="team section" style="background-color: #d2d9df;">
 
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Products</h2>
+      <div class="container section-title slider" data-aos="fade-up">
+        <h2 class="text">Our Products</h2>
         <p>Transform your look with our vibrant colored contact lenses. Perfect for special occasions or everyday style.
         </p>
       </div>
@@ -274,122 +304,113 @@ include('header.php');
         <div class="row gy-4 justify-content-center">
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-           
-              <div class="member" height="300px" width="100%">
-                <img src="assets/img/products/mobile-cleaning-gel-1.jpg" class="img-fluid" alt="">
-                <h4 class="pt-4" style="letter-spacing: 2px;">Mobile Cleaning Gel</h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="mobile-cleaning-gel.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" >Details</a>
-                </div>
-              </div>
-            </div>
-      
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-          
-              <div class="member">
-                <img src="assets/img/products/optical-lense-cleaning-gel-1.jpg" class="img-fluid" alt="">
-                <h4 class="pt-4" style="letter-spacing: 2px;">Optical Lense Cleaning Liquid </h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="optical-lens-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" >Details</a>
-                </div>
-              </div>
-            </div>
-          
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-          
-              <div class="member">
-                <img src="assets/img/products/all-gadject-cleaning-gel-1.jpg" class="img-fluid" alt="">
-                <h4 class="pt-4" style="letter-spacing: 2px;">All Gadject Cleaning Gel </h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="all-gad-c-g.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" >Details</a>
-                </div>
-              </div>
-            </div>
-      
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            
-              <div class="member">
-                <img src="assets/img/products/glass-cleaning-liquid-1.jpg" class="img-fluid" alt="">
-                <h4 class="pt-4" style="letter-spacing: 2px;">Glass Cleaning Liquid</h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="glass-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" >Details</a>
-                </div>
-              </div>
-            </div>
-          
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-         
-              <div class="member">
-                <img src="assets/img/products/optical-frame-case-1.jpg" class="img-fluid" alt="">
-                <h4 class="pt-4" style="letter-spacing: 2px;">Optical Frame Case</h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="optical-frame-case.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200">Details</a>
-                </div>
-              </div>
-            </div>
-        
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-
-        
-              <div class="member h-100">
-                <img src="assets/img/products/yoga.jpg" class="img-fluid" alt="" >
-                <h4 class="pt-4" style="letter-spacing: 2px;">Yoga Paduka Slipper</h4>
-                <div class="pt-4">
-                  <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                  <a href="yoga-paduka-slipper.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                    data-aos="fade-up" data-aos-delay="200" >Details</a>
-                </div>
+            <div class="member" height="300px" width="100%">
+              <img src="assets/img/products/mobile-cleaning-gel-1.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">Mobile Cleaning Gel</h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="mobile-cleaning-gel.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
               </div>
             </div>
           </div>
-       
 
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="member">
+              <img src="assets/img/products/optical-lense-cleaning-gel-1.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">Optical Lense Cleaning Liquid </h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="optical-lens-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="member">
+              <img src="assets/img/products/all-gadject-cleaning-gel-1.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">All Gadject Cleaning Gel </h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="all-gad-c-g.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/products/glass-cleaning-liquid-1.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">Glass Cleaning Liquid</h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="glass-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/products/optical-frame-case-1.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">Optical Frame Case</h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="optical-frame-case.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member h-100">
+              <img src="assets/img/products/yoga.jpg" class="img-fluid" alt="">
+              <h4 class="pt-4" style="letter-spacing: 2px;">Yoga Paduka Slipper</h4>
+              <div class="pt-4">
+                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                <a href="yoga-paduka-slipper.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+                  data-aos="fade-up" data-aos-delay="200">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       </div>
-
     </section><!-- /End Product Section -->
 
 
     <!-- Call To Action Section -->
     <section style="background-color: #d4d8db;">
-      <section id="call-to-action" class="call-to-action section dark-background">
+      <section id="call-to-action" class="call-to-action section  dark-background">
 
         <div class="container">
           <img src="assets/img/products/baner-2.jpg" alt="">
           <div class="content row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-xl-10">
               <div class="text-center">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
+                <a href="" class="glightbox play-btn"></a>
                 <h3>Call To Action</h3>
                 <p>"Help us improve! Take a quick survey and share your thoughts."</p>
-                <a class="cta-btn" href="contact.html">Call To Action</a>
+                <a class="cta-btn" href="contact.php">Call To Action</a>
               </div>
             </div>
           </div>
         </div>
-
       </section><!-- /Call To Action Section -->
     </section>
 
@@ -397,8 +418,8 @@ include('header.php');
     <section id="services" class="services section" style="background-color: #41403d;">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="text-white">Our Services</h2>
+      <div class="container section-title slider" data-aos="fade-up">
+        <h2 class="text-white text">Our Services</h2>
         <p class="text-white">At <b>Jp Optical Industries </b>, we specialize in providing high-quality optical lenses
           tailored to meet
           your vision needs. Whether you're looking for corrective lenses, specialty lenses, or protective eyewear, we
@@ -407,7 +428,7 @@ include('header.php');
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
           <div class="col-12 col-lg-4 col-md-6 col-sm-12">
             <div class="parent">
               <div class="h-100 text-center"
@@ -479,8 +500,8 @@ include('header.php');
     <section id="testimonials" class="testimonials section" style="background-color: #78af96;">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
+      <div class="container section-title slider" data-aos="fade-up">
+        <h2 class="text">Testimonials</h2>
         <p>"I’ve been using these lenses for a few months now, and the difference is night and day. Colors are vibrant,
           and I can see fine details I didn't notice before. Truly a game-changer!"</p>
       </div><!-- End Section Title -->
@@ -516,103 +537,103 @@ include('header.php');
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df; border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Anil Singh</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I love how stylish these lenses are! They not only enhance my vision but also elevate my look
-                      also with ny personality. I get compliments everywhere I go!"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-               
+
+              <div class="testimonial-item h-100" style="background-color:#d2d9df; border-radius: 20px;">
+                <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+                <h3>Anil Singh</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"I love how stylish these lenses are! They not only enhance my vision but also elevate my look
+                    also with ny personality. I get compliments everywhere I go!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Sidhu Ali</h3>
-                  <h4>Business Man</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I was skeptical about comfort, but these lenses are amazing. I wear them from morning to
-                      night
-                      without any irritation. I finally found my perfect pair!"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-               
+
+              <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+                <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+                <h3>Sidhu Ali</h3>
+                <h4>Business Man</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"I was skeptical about comfort, but these lenses are amazing. I wear them from morning to
+                    night
+                    without any irritation. I finally found my perfect pair!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I was looking for quality lenses without breaking the bank, and I found them here. Great
-                      performance and affordability—what more could you ask for?"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-              
+
+              <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+                <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"I was looking for quality lenses without breaking the bank, and I found them here. Great
+                    performance and affordability—what more could you ask for?"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"Switching to these lenses was the best decision I made. The transition from indoor to outdoor
-                      light is seamless, making my daily routine so much easier."</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-            
+
+              <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+                <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Switching to these lenses was the best decision I made. The transition from indoor to outdoor
+                    light is seamless, making my daily routine so much easier."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I appreciate how these lenses protect my eyes from UV rays. It gives me peace of mind knowing
-                      I’m taking care of my vision while enjoying the sun."</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-              
+
+              <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+                <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"I appreciate how these lenses protect my eyes from UV rays. It gives me peace of mind knowing
+                    I’m taking care of my vision while enjoying the sun."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
               </div>
             </div><!-- End testimonial item -->
 
@@ -630,15 +651,15 @@ include('header.php');
     <section id="recent-posts" class="recent-posts section" style="background-color: #bfbfbf;">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
+      <div class="container section-title slider" data-aos="fade-up">
+        <h2 class="text">Recent Blog Posts</h2>
         <p>When it comes to maintaining clear vision and eye comfort, choosing the right lens products is essential.
           With so many options available, it can be overwhelming to find the perfect fit for your lifestyle. </p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
 
           <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <article class=" image-effect">
@@ -712,8 +733,8 @@ include('header.php');
     <section id="contact" class="contact section" style="background-color: azure;">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+      <div class="container section-title slider" data-aos="fade-up">
+        <h2 class="text">Contact</h2>
         <p>We’re here to help! Whether you have questions about our products, need assistance with an order, or just
           want to share your feedback, don’t hesitate to reach out. Our dedicated team is ready to assist you.</p>
       </div><!-- End Section Title -->
@@ -800,6 +821,6 @@ include('header.php');
   </main>
 
 
-  <?php 
+  <?php
   include('footer.php');
   ?>

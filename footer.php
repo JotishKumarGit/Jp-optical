@@ -85,7 +85,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About us</a></li>
         <li><a href="service.php">Services</a></li>
-        <li><a href="testimonials">Testimonials</a></li>
+        <li><a href="testimonial.php">Testimonials</a></li>
         <li><a href="contact.php">Contact</a></li>
       </ul>
     </div>

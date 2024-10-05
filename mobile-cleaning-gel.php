@@ -70,8 +70,8 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>Mobile Cleaning Gel</h2>
+    <div class="bg slider">
+        <h2 class="text">Mobile Cleaning Gel</h2>
     </div>
 
 

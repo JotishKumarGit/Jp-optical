@@ -70,9 +70,9 @@
 
     <!--  -->
 
-    <div class="bg">
-        <h2>All Gadject Cleaning Gel</h2>
-    </div>
+    <div class="bg slider">
+        <h2 class="text">All Gadject Cleaning Gel</h2>
+    </div> 
 
 
     <!-- THis is section  -->

@@ -70,8 +70,8 @@
 
   <!--  -->
 
-  <div class="bg">
-    <h2>Testimonials</h2>
+  <div class="bg slider">
+    <h2 class="text">Testimonials</h2>
   </div>
 
 
