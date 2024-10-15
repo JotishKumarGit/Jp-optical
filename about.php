@@ -1,3 +1,6 @@
+
+<?php include('config.php');  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,22 +78,21 @@
     </div>
 
 
-    <!-- THis is section  -->
-
-
+    <!-- This is about section  -->
     <section class="shadow-lg" style="background-color: rgb(165 183 168);">
         <div class="container">
-            <div class="py-5">
-                <h2 class="text-center">About Us</h2>
+            <div class="py-5 text-center slider">
+                <h2 class="text-center text">About Us</h2>
             </div>
             <div class="row shadow-lg align-items-center py-5 px-4 "
                 style="border-radius: 20px; border: 2px dashed ghostwhite;" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-12 col-md-6 col-lg-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="" data-aos="fade-up" data-aos-delay="200">Welcome To Jp Optical Industries</h2>
                     <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">At JP Optical Industries, we specialize in
-                        providing high-quality optical products designed to enhance
-                        vision and improve the quality of life. With a commitment to innovation, precision, and customer
-                        satisfaction, we have established ourselves as a leader in the optical industry.</p>
+                        Keep your eyewear crystal clear with our premium lens cleaning solutions. Perfect for glasses, sunglasses, and camera lenses, our products are designed to remove smudges, dirt, and fingerprints without damaging delicate surfaces.</p>
+                    <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">Welcome to JP OPTICAL INDUSTRIES CALOCLEAR Screen cleaning gel!
+                        Screen cleaning gel is a specialized product designed to safely clean screens of electronic devices like smartphones, tablets, and computer monitors. It typically comes in a gel form to minimize the risk of dripping and to provide a thorough clean without damaging the surface</p>
+
                     <ul>
                         <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Manufacture</li>
                         <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Export</li>
@@ -153,7 +155,7 @@
                     <h2 class="" data-aos="fade-up" data-aos-delay="200">Our Vission</h2>
                     <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">At JP Optical Industries, we envision a future where everyone has access to superior optical solutions that enhance vision and enrich lives. We strive to be the global leader in the optical industry, known for our innovation, quality, and commitment to sustainability.</p>
                     <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">By embracing cutting-edge technology and fostering partnerships, we aim to set new standards for excellence, creating a world where clarity and precision empower every individual and business to see their potential clearly.</p>
-                 
+
                     <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
                         data-aos="fade-up" data-aos-delay="200">Contact Us</a>
                 </div>

@@ -1,3 +1,6 @@
+
+<?php include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -142,7 +145,10 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input type="text" class="form-control phone" name="subject" placeholder="Subject" required="">
+                                <input type="number" class="form-control phone" name="number" placeholder="Enter Your Quantity" required="">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control phone" name="subject" placeholder="Write your Interested Products" required="">
                             </div>
 
                             <div class="col-md-12">

@@ -1,3 +1,5 @@
+<?php include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,163 +77,163 @@
   </div>
 
 
-<!-- This is section  -->
+  <!-- This is section  -->
 
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section" style="background-color: #78af96;">
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section" style="background-color: #78af96;">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>"I’ve been using these lenses for a few months now, and the difference is night and day. Colors are vibrant,
-          and I can see fine details I didn't notice before. Truly a game-changer!"</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title slider" data-aos="fade-up">
+      <h2 class="text">Testimonials</h2>
+      <p>"I’ve been using these lenses for a few months now, and the difference is night and day. Colors are vibrant,
+        and I can see fine details I didn't notice before. Truly a game-changer!"</p>
+    </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
               },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 10
-                }
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 10
               }
             }
-          </script>
-          <div class="swiper-wrapper">
+          }
+        </script>
+        <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df; border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Anil Singh</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I love how stylish these lenses are! They not only enhance my vision but also elevate my look
-                      also with ny personality. I get compliments everywhere I go!"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-               
+          <div class="swiper-slide">
+
+            <div class="testimonial-item h-100" style="background-color:#d2d9df; border-radius: 20px;">
+              <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+              <h3>amitabh</h3>
+              <h4>Ceo &amp; Founder</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-            </div><!-- End testimonial item -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>"I’ve tried many lens cleaners, but JP OPTICAL INDUSTRIES CALOCLEAR is by far the best. No streaks, just crystal-clear lenses!" – thomas"
+                  The microfiber cloths are amazing! They’re so soft and effective."</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
 
-            <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Sidhu Ali</h3>
-                  <h4>Business Man</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I was skeptical about comfort, but these lenses are amazing. I wear them from morning to
-                      night
-                      without any irritation. I finally found my perfect pair!"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-               
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+              <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+              <h3>Mark T</h3>
+              <h4>Business Man</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-            </div><!-- End testimonial item -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>"This cleaning gel is a game-changer! My screen has never looked better!" – Sarah J.
+                  "Finally, a product that works without damaging my devices. Highly recommend!" .
+                </span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
 
-            <div class="swiper-slide">
-             
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I was looking for quality lenses without breaking the bank, and I found them here. Great
-                      performance and affordability—what more could you ask for?"</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-              
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+              <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-            </div><!-- End testimonial item -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>"I was looking for quality lenses without breaking the bank, and I found them here. Great
+                  performance and affordability—what more could you ask for?"</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
 
-            <div class="swiper-slide">
-              
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"Switching to these lenses was the best decision I made. The transition from indoor to outdoor
-                      light is seamless, making my daily routine so much easier."</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-            
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+              <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-            </div><!-- End testimonial item -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>"Switching to these lenses was the best decision I made. The transition from indoor to outdoor
+                  light is seamless, making my daily routine so much easier."</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
 
-            <div class="swiper-slide">
-              
-                <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
-                  <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>"I appreciate how these lenses protect my eyes from UV rays. It gives me peace of mind knowing
-                      I’m taking care of my vision while enjoying the sun."</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-              
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
+              <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-            </div><!-- End testimonial item -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>"I appreciate how these lenses protect my eyes from UV rays. It gives me peace of mind knowing
+                  I’m taking care of my vision while enjoying the sun."</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
 
-          </div>
-          <div class="swiper-pagination"></div>
+            </div>
+          </div><!-- End testimonial item -->
+
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </div>
+
+  </section><!-- /Testimonials Section -->
 
 
 
 
 
 
-<?php 
-include('footer.php');
-?>
+  <?php
+  include('footer.php');
+  ?>

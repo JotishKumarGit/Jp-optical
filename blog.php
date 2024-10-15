@@ -1,3 +1,7 @@
+
+<?php include('config.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,89 +77,88 @@
   <div class="bg slider">
     <h2 class="text">Blog</h2>
   </div>
+<!-- Recent Posts Section -->
+<section id="recent-posts" class="recent-posts section" style="background-color: #bfbfbf;">
 
+<!-- Section Title -->
+<div class="container section-title slider" data-aos="fade-up">
+  <h2 class="text">Recent Blog Posts</h2>
+  <h2 class="">Tips for Maintaining Your Lenses</h2>
+  <p>Daily Cleaning: Regular cleaning can prolong the life of your lenses.
+    Avoid Harsh Chemicals: Always use products specifically designed for lens care.
+    Store Properly: Keep your eyewear in a case when not in use to prevent scratches.</p>
+</div><!-- End Section Title -->
 
-  <!-- Recent Posts Section -->
-  <section id="recent-posts" class="recent-posts section" style="background-color: #bfbfbf;">
+<div class="container">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Recent Blog Posts</h2>
-      <p>When it comes to maintaining clear vision and eye comfort, choosing the right lens products is essential.
-        With so many options available, it can be overwhelming to find the perfect fit for your lifestyle. </p>
-    </div><!-- End Section Title -->
+  <div class="row gy-4 justify-content-center">
 
-    <div class="container">
+    <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+      <article class=" image-effect">
 
-      <div class="row gy-4">
+        <div class="post-img">
+          <img src="assets/img/products/baner-5.jpg" alt="" class="img-fluid ">
+        </div>
 
-        <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
-          <article class=" image-effect">
+        <p class="post-category text-center">Politics</p>
 
-            <div class="post-img">
-              <img src="assets/img/products/baner-4.avif" alt="" class="img-fluid ">
-            </div>
+        <h2 class="title">
+          <a href="" class="text-center">Stay updated with tips on gadget care, the latest in cleaning technology, and eco-friendly practices.
+          </a>
+        </h2>
+        <div class="text-center">
+          <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+            data-aos="fade-up" data-aos-delay="200">Read More</a>
+        </div>
+      </article>
+    </div><!-- End post list item -->
 
-            <p class="post-category text-center">Politics</p>
+    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <article class=" image-effect">
 
-            <h2 class="title">
-              <a href="" class="text-center">Perfect for those who want the convenience of disposable lenses. Just
-                wear
-                them during the day and toss them at night.</a>
-            </h2>
-            <div class="text-center">
-              <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                data-aos="fade-up" data-aos-delay="200">Read More</a>
-            </div>
-          </article>
-        </div><!-- End post list item -->
+        <div class="post-img">
+          <img src="assets/img/products/baner-2.jpg" alt="" class="img-fluid">
+        </div>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <article class=" image-effect">
+        <p class="post-category text-center">Sports</p>
 
-            <div class="post-img">
-              <img src="assets/img/products/baner-2.jpg" alt="" class="img-fluid">
-            </div>
+        <h2 class="title">
+          <a href="" class="text-center">Add a fun twist to your look! Whether you're looking for a subtle
+            enhancement or a dramatic change.</a>
+        </h2>
+        <div class="text-center">
+          <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+            data-aos="fade-up" data-aos-delay="200">Read More</a>
+        </div>
+      </article>
+    </div><!-- End post list item -->
 
-            <p class="post-category text-center">Sports</p>
+    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <article class=" image-effect">
 
-            <h2 class="title">
-              <a href="" class="text-center">Add a fun twist to your look! Whether you're looking for a subtle
-                enhancement or a dramatic change.</a>
-            </h2>
-            <div class="text-center">
-              <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                data-aos="fade-up" data-aos-delay="200">Read More</a>
-            </div>
-          </article>
-        </div><!-- End post list item -->
+        <div class="post-img">
+          <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+        </div>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <article class=" image-effect">
+        <p class="post-category text-center">Entertainment</p>
 
-            <div class="post-img">
-              <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-            </div>
+        <h2 class="title">
+          <a href="" class="text-center">For those with unique vision needs, options like toric lenses for
+            astigmatism or multifocal lenses can provide.</a>
+        </h2>
+        <div class="text-center">
+          <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
+            data-aos="fade-up" data-aos-delay="200">Read More</a>
+        </div>
 
-            <p class="post-category text-center">Entertainment</p>
+      </article>
+    </div><!-- End post list item -->
 
-            <h2 class="title">
-              <a href="" class="text-center">For those with unique vision needs, options like toric lenses for
-                astigmatism or multifocal lenses can provide.</a>
-            </h2>
-            <div class="text-center">
-              <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                data-aos="fade-up" data-aos-delay="200">Read More</a>
-            </div>
+  </div><!-- End recent posts list -->
 
-          </article>
-        </div><!-- End post list item -->
+</div>
 
-      </div><!-- End recent posts list -->
-
-    </div>
-
-  </section><!-- /Recent Posts Section -->
+</section><!-- /Recent Posts Section -->
 
 
 

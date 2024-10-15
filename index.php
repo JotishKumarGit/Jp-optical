@@ -1,3 +1,9 @@
+<?php
+include('config.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,8 +95,6 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background">
 
-
-
       <!-- THis is for carousel  -->
 
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -155,7 +159,7 @@
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class=""><img src="./assets/img/products/baner-4.avif" alt="" height="100px" width="100px"
+                <div class=""><img src="./assets/img/products/optical-lense-cleaning-gel-1.jpg" alt="" height="100px" width="100px"
                     style="object-fit: cover;border-radius: 100%;color: aliceblue;border: 1px solid rgb(236, 224, 224);">
                 </div>
                 <h4 class="title mt-2"><a href="" class="stretched-link">Optical/lens cleaning liquid</a></h4>
@@ -188,9 +192,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay="200">
             <h2 class="" data-aos="fade-up" data-aos-delay="200">Welcome To Jp Optical Industries</h2>
             <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">At JP Optical Industries, we specialize in
-              providing high-quality optical products designed to enhance
-              vision and improve the quality of life. With a commitment to innovation, precision, and customer
-              satisfaction, we have established ourselves as a leader in the optical industry.</p>
+              Keep your eyewear crystal clear with our premium lens cleaning solutions. Perfect for glasses, sunglasses, and camera lenses, our products are designed to remove smudges, dirt, and fingerprints without damaging delicate surfaces.</p>
+            <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">Welcome to JP OPTICAL INDUSTRIES CALOCLEAR Screen cleaning gel!
+              Screen cleaning gel is a specialized product designed to safely clean screens of electronic devices like smartphones, tablets, and computer monitors. It typically comes in a gel form to minimize the risk of dripping and to provide a thorough clean without damaging the surface</p>
+
             <ul>
               <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Manufacture</li>
               <li class="lh-lg" data-aos="fade-up" data-aos-delay="200">We Export</li>
@@ -225,7 +230,7 @@
           <div class="col-lg-5">
             <div class="image-effect">
               <div class="img-a">
-                <img src="assets/img/products/baner-7.avif" alt="" class="img-fluid shadow-lg"
+                <img src="assets/img/products/avon-multipurpose-m-s-g.jpg" alt="" class="img-fluid shadow-lg"
                   style="border: 1px dashed grey; border-radius: 20px;">
               </div>
             </div>
@@ -288,110 +293,71 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- This is product section  -->
-
-    <section id="team" class="team section" style="background-color: #d2d9df;">
-
-
-      <div class="container section-title slider" data-aos="fade-up">
-        <h2 class="text">Our Products</h2>
-        <p>Transform your look with our vibrant colored contact lenses. Perfect for special occasions or everyday style.
-        </p>
-      </div>
-
+    <!-- This is products section  -->
+    <section style="background-color: #bfbfbf;">
       <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="member" height="300px" width="100%">
-              <img src="assets/img/products/mobile-cleaning-gel-1.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">Mobile Cleaning Gel</h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="mobile-cleaning-gel.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
+        <div class="py-4">
+          <h2 class="text-center">Our Products </h2>
+        </div>
+        <div class="row py-5 px-2 justify-content-center shadow-lg">
+          <!-- PHP Code  -->
+          <?php
+          $select_query = "select * from `category`";
+          $data = mysqli_query($con, $select_query);
+          while ($row = mysqli_fetch_array($data)) {
+          ?>
+            <div class="col-12 col-md-6 col-lg-3 col-sm-12 mb-4 ">
+              <div class="card shadow-lg h-100">
+                <img src="<?php echo $row['category_image'] ?>" class="card-img-top" alt="..." height="250px" width="auto" style="border: 1px solid grey; ">
+                <div class="card-body text-center mb-3">
+                  <h5 class="card-title mb-3"><?php echo $row['category_name'] ?></h5>
+                  <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
+                  <a href="single.php?find=<?php echo $row['find'] ?>" class="btn btn-primary">Details</a>
+                </div>
               </div>
             </div>
-          </div>
+          <?php
+          }
+          ?>
+        </div>
+      </div>
+    </section>
+    <!-- end products section  -->
 
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+    <!-- How to use  -->
 
-            <div class="member">
-              <img src="assets/img/products/optical-lense-cleaning-gel-1.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">Optical Lense Cleaning Liquid </h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="optical-lens-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
-              </div>
+    <section style="background-color: #bfbfbf;">
+      <div class="container py-5">
+        <div class="py-5 px-4 text-center">
+          <h2>How to Use</h2>
+        </div>
+        <div class="row px-4 py-5 shadow-lg">
+          <div class="col-md-4">
+            <div class="des text-center">
+              <h3 class="lh-lg">Step 1 : </h3>
+              <p class="lh-lg">Spray JP OPTICAL INDUSTRIES CALOCLEAR Lens Cleaner on the lens surface or onto the microfiber cloth.</p>
             </div>
           </div>
-
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="member">
-              <img src="assets/img/products/all-gadject-cleaning-gel-1.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">All Gadject Cleaning Gel </h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="all-gad-c-g.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
-              </div>
+          <div class="col-md-4">
+            <div class="des text-center">
+              <h3 class="lh-lg">Step 2 : </h3>
+              <p class="lh-lg">Gently wipe the lens in circular motions to remove dirt and smudges.
+              </p>
             </div>
           </div>
-
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/products/glass-cleaning-liquid-1.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">Glass Cleaning Liquid</h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="glass-cleaning-liquid.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/products/optical-frame-case-1.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">Optical Frame Case</h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="optical-frame-case.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member h-100">
-              <img src="assets/img/products/yoga.jpg" class="img-fluid" alt="">
-              <h4 class="pt-4" style="letter-spacing: 2px;">Yoga Paduka Slipper</h4>
-              <div class="pt-4">
-                <a href="" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry</a>
-                <a href="yoga-paduka-slipper.php" class="px-3 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                  data-aos="fade-up" data-aos-delay="200">Details</a>
-              </div>
+          <div class="col-md-4">
+            <div class="des text-center">
+              <h3 class="lh-lg">Step 3 : </h3>
+              <p class="lh-lg">For best results, finish with a clean, dry section of the cloth.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </section><!-- /End Product Section -->
+    </section>
+
+    <!-- End how to use -->
 
 
     <!-- Call To Action Section -->
@@ -413,6 +379,40 @@
         </div>
       </section><!-- /Call To Action Section -->
     </section>
+
+    <!-- FAQ section  -->
+    <section style="background-color: #d4d8db;">
+      <div class="container">
+        <div class="py-4">
+          <h2>FAQs</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+            <h4> 1 : Is your lens cleaner safe for anti-reflective coatings?</h4>
+            <p class="lh-lg pb-3">Yes, our formula is specially designed to be safe for all lens coatings.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+            <h4> 2 : Can I use your wipes on camera lenses?</h4>
+            <p class="lh-lg pb-3">Absolutely! Our wipes are safe for camera lenses and other delicate optics.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+            <h4> 3 : Is the gel safe for screens?</h4>
+            <p class="lh-lg pb-3">Yes, our gel is safe for all types of screens, including smartphones, tablets, and laptops.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+            <h4> 4 : Can I use it on other surfaces? </h4>
+            <p class="lh-lg pb-3"> Absolutely! It's safe for keyboards, gaming consoles, and more.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+            <h4 class="lh-lg pb-3"> 5 : How often should I clean my gadgets?</h4>
+            <p class="lh-lg pb-3">We recommend cleaning your devices at least once a week or as needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end faq section  -->
+
+
 
     <!-- Services Section -->
     <section id="services" class="services section" style="background-color: #41403d;">
@@ -496,6 +496,72 @@
     </section><!-- /Services Section -->
 
 
+    <!-- Why Chose Us -->
+
+    <section>
+      <div class="container">
+        <div class="py-4 text-center ">
+          <h2>Why Chose Us</h2>
+        </div>
+        <div class="row shadow-lg px-4 py-5 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Streak-Free Formula</h4>
+              <p class="lh-lg">Our unique formula ensures a spotless finish every time.</p>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Safe for All Lenses</h4>
+              <p class="lh-lg">Compatible with anti-reflective, polarized, and prescription lenses.</p>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Eco-Friendly</h4>
+              <p class="lh-lg">Biodegradable ingredients and recyclable packaging.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Effective Cleaning</h4>
+              <p class="lh-lg">Our gel is specially formulated to remove dirt, fingerprints, and smudges from all types of gadgets.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Eco-Friendly</h4>
+              <p class="lh-lg">Made with biodegradable ingredients that are safe for you and the environment.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Safe for All Surfaces</h4>
+              <p class="lh-lg">Suitable for screens, keyboards, and other delicate surfaces without causing damage.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-md-6 col-lg-4 col-sm-12 mb-4">
+            <div class="text-center py-5" height="500px" width="100%" style="background-color: #78af96; border-radius:10px;">
+              <h4>Easy to Use</h4>
+              <p class="lh-lg">Convenient gel format makes cleaning quick and hassle-free.</p>
+            </div>
+          </div>
+          <!--  -->
+
+        </div>
+    </section>
+    <!-- End Chose Us -->
+
+
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section" style="background-color: #78af96;">
 
@@ -540,7 +606,7 @@
 
               <div class="testimonial-item h-100" style="background-color:#d2d9df; border-radius: 20px;">
                 <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                <h3>Anil Singh</h3>
+                <h3>amitabh</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -548,8 +614,8 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"I love how stylish these lenses are! They not only enhance my vision but also elevate my look
-                    also with ny personality. I get compliments everywhere I go!"</span>
+                  <span>"I’ve tried many lens cleaners, but JP OPTICAL INDUSTRIES CALOCLEAR is by far the best. No streaks, just crystal-clear lenses!" – thomas"
+                    The microfiber cloths are amazing! They’re so soft and effective."</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
 
@@ -560,7 +626,7 @@
 
               <div class="testimonial-item h-100" style="background-color:#d2d9df ;  border-radius: 20px;">
                 <img src="assets/img/testimonials/person-icon.png" class="testimonial-img" alt="">
-                <h3>Sidhu Ali</h3>
+                <h3>Mark T</h3>
                 <h4>Business Man</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -568,9 +634,9 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"I was skeptical about comfort, but these lenses are amazing. I wear them from morning to
-                    night
-                    without any irritation. I finally found my perfect pair!"</span>
+                  <span>"This cleaning gel is a game-changer! My screen has never looked better!" – Sarah J.
+                    "Finally, a product that works without damaging my devices. Highly recommend!" .
+                  </span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
 
@@ -653,8 +719,10 @@
       <!-- Section Title -->
       <div class="container section-title slider" data-aos="fade-up">
         <h2 class="text">Recent Blog Posts</h2>
-        <p>When it comes to maintaining clear vision and eye comfort, choosing the right lens products is essential.
-          With so many options available, it can be overwhelming to find the perfect fit for your lifestyle. </p>
+        <h2 class="">Tips for Maintaining Your Lenses</h2>
+        <p>Daily Cleaning: Regular cleaning can prolong the life of your lenses.
+          Avoid Harsh Chemicals: Always use products specifically designed for lens care.
+          Store Properly: Keep your eyewear in a case when not in use to prevent scratches.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -665,15 +733,14 @@
             <article class=" image-effect">
 
               <div class="post-img">
-                <img src="assets/img/products/baner-4.avif" alt="" class="img-fluid ">
+                <img src="assets/img/products/baner-5.jpg" alt="" class="img-fluid ">
               </div>
 
               <p class="post-category text-center">Politics</p>
 
               <h2 class="title">
-                <a href="" class="text-center">Perfect for those who want the convenience of disposable lenses. Just
-                  wear
-                  them during the day and toss them at night.</a>
+                <a href="" class="text-center">Stay updated with tips on gadget care, the latest in cleaning technology, and eco-friendly practices.
+                </a>
               </h2>
               <div class="text-center">
                 <a href="about.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
@@ -735,8 +802,7 @@
       <!-- Section Title -->
       <div class="container section-title slider" data-aos="fade-up">
         <h2 class="text">Contact</h2>
-        <p>We’re here to help! Whether you have questions about our products, need assistance with an order, or just
-          want to share your feedback, don’t hesitate to reach out. Our dedicated team is ready to assist you.</p>
+        <p>Have questions or need assistance? Reach out to us!</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -767,7 +833,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>jpopticaldvd@gmail.com</p>
+                  <p>support@jpopticalintustries.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -793,7 +859,10 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control phone" name="subject" placeholder="Subject" required="">
+                  <input type="number" class="form-control phone" name="number" placeholder="Enter Your Quantity" required="">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control phone" name="subject" placeholder="Write your Interested Products" required="">
                 </div>
 
                 <div class="col-md-12">

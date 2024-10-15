@@ -1,3 +1,7 @@
+<?php
+include('config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,46 +75,35 @@
     <!--  -->
 
     <div class="bg slider">
-        <h2 class="text">Glass Cleaning Liquid</h2>
+        <h2 class="text">Our Products</h2>
     </div>
 
 
-    <!-- THis is section  -->
-
-
-    <section class="shadow-lg" style="background-color: rgb(165 183 168);">
+    <section>
         <div class="container">
-            <div class="py-5">
-                <h2 class="text-center">Glass Cleaning Liquid</h2>
-            </div>
-            <div class="row shadow-lg align-items-center py-5 px-4 "
-                style="border-radius: 20px; border: 2px dashed ghostwhite;" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-12 col-md-6 col-lg-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="" data-aos="fade-up" data-aos-delay="200">Welcome To Jp Optical Industries</h2>
-                    <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">Achieve a streak-free shine with our premium Glass Cleaning Liquid, designed to effortlessly clean and restore the brilliance of all glass surfaces. Whether you're tackling windows, mirrors, or glass furniture, our powerful formula cuts through grime, dirt, and fingerprints, leaving a crystal-clear finish.</p>
-                    <ul>
-                        <li class="lh-lg" data-aos="fade-up" data-aos-delay="200"><b> Streak-Free Formula :</b>   Enjoy a sparkling clean without any streaks or residue, perfect for achieving a flawless shine.</li>
-                        <li class="lh-lg" data-aos="fade-up" data-aos-delay="200"><b>Versatile Use :</b>   Ideal for all glass surfaces, including windows, mirrors, tabletops, and shower doors.</li>
-                    </ul>
-                    <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                        data-aos="fade-up" data-aos-delay="200">Contact Us</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image-effect">
-                        <div class="img-a ">
-                            <img src="./assets/img/products/glass-cleaning-liquid.jpg" alt="" class="shadow-lg " height="auto" width="100%"
-                                style="object-fit: cover; border: 1px dashed greenyellow; border-radius: 20px;" data-aos="fade-up"
-                                data-aos-delay="200">
+            <div class="row justify-content-center">
+                <?php
+
+                $user = $_GET['find'];
+
+                $sel = "SELECT * FROM `products` where `find`='$user'";
+                $q = mysqli_query($con, $sel);
+                while ($row = mysqli_fetch_assoc($q)) {
+                ?>
+                    <div class="col-12 col-lg-3 my-3 ">
+                        <div class="shadow-lg h-100" style="border: 1px solid black; border-radius: 10px;">
+                            <img src="<?php echo $row['product_image'] ?>" class=" " height="200px" width="100%" style="object-fit: cover; border: 1px solid black;" alt="Rice">
+                            <h4 class="text-primary text-dark px-3  text-center py-3" style="letter-spacing: 2px;"><?php echo $row['product_name'] ?></h4>
+                            <div class="text-center pb-2">
+                                <a class="text-center "><button class="py-2 px-4 text-white bg-dark" style="border-radius: 100px;"><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-white text-decoration-none ">Enquiry</a></button></a>
+                                <a href="singlepage.php?product_id=<?php echo $row['product_id'] ?>"><button class="text-center py-2 px-4 border-none rounded-pill">Details</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
-
-
-
-
 
     <?php
     include('footer.php');

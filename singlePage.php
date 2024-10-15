@@ -1,3 +1,8 @@
+<?php
+include('config.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,45 +76,38 @@
     <!--  -->
 
     <div class="bg slider">
-        <h2 class="text">All Gadject Cleaning Gel</h2>
-    </div> 
+        <h2 class="text">Products Details</h2>
+    </div>
 
 
-    <!-- THis is section  -->
-
-
-    <section class="shadow-lg" style="background-color: rgb(165 183 168);">
+    <!-- Section  -->
+    <section style="background-color: grey;">
         <div class="container">
-            <div class="py-5">
-                <h2 class="text-center">All Gadject Cleaning Gel</h2>
-            </div>
-            <div class="row shadow-lg align-items-center py-5 px-4 "
-                style="border-radius: 20px; border: 2px dashed ghostwhite;" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-12 col-md-6 col-lg-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="" data-aos="fade-up" data-aos-delay="200">Welcome To Jp Optical Industries</h2>
-                    <p class="lh-lg" data-aos="fade-up" data-aos-delay="200">All Gadject Cleaning Gel—the ultimate cleaning solution for all your gadgets! Whether it’s your smartphone, tablet, laptop, or gaming console, our specially formulated gel removes dirt, fingerprints, and grime with ease. Keep your devices looking pristine and performing at their best.</p>
-                    <ul>
-                        <li class="lh-lg" data-aos="fade-up" data-aos-delay="200"><b>Universal Application :</b>  Perfect for cleaning screens, keyboards, and other surfaces on a variety of gadgets, including phones, tablets, laptops, and more.</li>
-                        <li class="lh-lg" data-aos="fade-up" data-aos-delay="200"><b>Streak-Free Formula :</b> Our advanced gel ensures a spotless finish, leaving no streaks or residue behind.</li>
-                    </ul>
-                    <a href="contact.php" class="px-4 py-2 btn" style="border: 1px solid green; border-radius: 100px;"
-                        data-aos="fade-up" data-aos-delay="200">Contact Us</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image-effect">
-                        <div class="img-a ">
-                            <img src="./assets/img/products/all-gadject-cleaning-gel-1.jpg" alt="" class="shadow-lg " height="auto" width="100%"
-                                style="object-fit: cover; border: 1px dashed greenyellow; border-radius: 20px;" data-aos="fade-up"
-                                data-aos-delay="200">
+            <div class="row align-items-center justify-content-center shadow-lg px-4 py-5">
+                <!-- php  -->
+                <?php
+                $product_id = $_GET['product_id'];
+                $select_query = "select * from `products` where `product_id`='$product_id' ";
+                $data = mysqli_query($con, $select_query);
+                $result = mysqli_num_rows($data);
+                if ($result) {
+                    while ($row = mysqli_fetch_assoc($data)) {
+                ?>
+                        <div class="col-12 col-md-12 col-lg-6 col-sm-12">
+                            <img src="<?php echo $row['product_image'] ?>" alt="" height="auto" width="100%">
                         </div>
-                    </div>
-                </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-sm-12">
+                            <h2 class="text-white"><?php echo $row['product_name'] ?></h2>
+                            <h3 class="text-white"><?php echo $row['product_title'] ?></h3>
+                            <p class="lh-lg text-white"><?php echo $row['product_dec'] ?></p>
+                            <a class="text-center "><button class="py-2 px-4 text-white bg-dark" style="border-radius: 100px;"><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-white text-decoration-none ">Enquiry</a></button></a>
+                        </div>
+                <?php }
+                } ?>
+
             </div>
         </div>
     </section>
-
-
-
 
 
     <?php
